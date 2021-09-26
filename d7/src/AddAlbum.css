@@ -1,0 +1,45 @@
+.add-album {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .add-album-click {
+    display: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  input::placeholder {
+    color:red ;
+  }
+  
+  input[type="file"]::file-selector-button {
+    padding: 0.2em 2.9em;
+    border-radius: 0.2em;
+    background: transition;
+    transition: 1s;
+    height: 30px;
+    color: red;
+  }
+  
+  input {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    background:transition;
+    color: #ffffff;
+  }
+  
+  .albums_container {
+    z-index: -1;
+  }

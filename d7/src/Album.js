@@ -1,32 +1,24 @@
-import React, { Component } from 'react'
-import "../App.css"
-import { Card } from 'antd';
-const { Meta } = Card;
+import React from "react";
+import "./Album.css";
 
-export class Album extends Component {
-    constructor(props) {
-        super(props)
-    }
-    clickHandler = (e, props) => {
-        { this.props.deleteFunc() }
-        e.preventDefault()
-    }
-    render() {
-        return (
-            <div className="card">
-                <Card
-                    hoverable
-                    style={{ width: 240 }}
-                    cover={<img alt="example" src="https://pbs.twimg.com/media/ENHL1IpUYAI57ES.jpg" width="300" height="380" />}
-                >
-                    <Meta title={this.props.album_title} />
-                    <h5>{this.props.artist}</h5>
-                    <h5>{this.props.album_cover}</h5>
-                </Card>
-                <button onClick={this.clickHandler}>Delete</button>
-            </div>
-        )
-    }
-}
+const Album = ({ id, artist, album, image, title, song }) => {
+  return (
+    <div key={id} className="album">
+      <img src={image} alt={title} />
+      <div className="col">
+        <div className="col1">
+          <h1> {title} </h1>
+          <a href={song}>
+            <button>Play</button>
+          </a>
+        </div>
+        <div className="col2">
+          <h2> {artist} </h2>
+          <h3> {album} </h3>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Album
+export default Album;
