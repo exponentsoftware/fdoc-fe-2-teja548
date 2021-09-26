@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "artist": "Kishore Kumar",
+    "album": "Mr.X In Bombay",
+    "image": "https://picsum.photos/400",
+    "title": "Mere Mehboob Qayamat Hogi",
+    "song": "https://youtu.be/OyrfNNL7gao"
+  },
+  {
+    "id": 2,
+    "artist": "Rishi Kapur",
+    "album": "Deewana",
+    "image": "https://picsum.photos/401",
+    "title": "Sochenge tumhe pyar",
+    "song": "https://youtu.be/lFdSi01tpYM"
+  },
+  {
+    "id": 3,
+    "artist": "Mannara, Karanvir",
+    "album": "Zid",
+    "image": "https://picsum.photos/402",
+    "title": "Tu Zaroori ",
+    "song": "https://youtu.be/oNA5wTiNmS8"
+  }
+]
